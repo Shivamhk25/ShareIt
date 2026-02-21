@@ -1,7 +1,5 @@
 # ShareIt 🚀
 
-![ShareIt](https://i.ibb.co/7CmVbCW/image.png)
-
 > A modern, full-stack social media application for sharing life's memorable moments with the world.
 
 ## 📖 Introduction
