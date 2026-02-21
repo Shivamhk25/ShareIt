@@ -1,0 +1,131 @@
+import { makeStyles } from '@material-ui/core/styles';
+import { deepPurple } from '@material-ui/core/colors';
+
+export default makeStyles((theme) => ({
+  appBar: {
+    borderRadius: 20,
+    margin: '30px 0',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '15px 50px',
+    background: 'rgba(255, 255, 255, 0.1)',
+    backdropFilter: 'blur(20px)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+      padding: '20px 30px',
+    },
+  },
+  heading: {
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+    textDecoration: 'none',
+    fontSize: '2.5em',
+    fontWeight: 800,
+    letterSpacing: '-1px',
+  },
+  image: {
+    marginLeft: '15px',
+    marginTop: '5px',
+    filter: 'drop-shadow(0 0 10px rgba(102, 126, 234, 0.6))',
+  },
+  navLinks: {
+    display: 'flex',
+    gap: '10px',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '15px',
+    },
+  },
+  navButton: {
+    color: '#ffffff',
+    padding: '8px 20px',
+    borderRadius: '12px',
+    textTransform: 'none',
+    fontSize: '1rem',
+    fontWeight: 500,
+    transition: 'all 0.3s ease',
+    '&:hover': {
+      background: 'rgba(102, 126, 234, 0.2)',
+      transform: 'translateY(-2px)',
+    },
+  },
+  toolbar: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    [theme.breakpoints.down('sm')]: {
+      width: 'auto',
+    },
+  },
+  profile: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    gap: '15px',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: 20,
+      justifyContent: 'center',
+    },
+  },
+  logout: {
+    marginLeft: '20px',
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    color: 'white',
+    padding: '10px 25px',
+    borderRadius: '12px',
+    fontWeight: 600,
+    textTransform: 'none',
+    fontSize: '0.95rem',
+    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+    '&:hover': {
+      background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
+      transform: 'translateY(-2px)',
+      boxShadow: '0 6px 20px rgba(102, 126, 234, 0.6)',
+    },
+  },
+  loginButton: {
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    color: 'white',
+    padding: '10px 30px',
+    borderRadius: '12px',
+    fontWeight: 600,
+    textTransform: 'none',
+    fontSize: '1rem',
+    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+    '&:hover': {
+      background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
+      transform: 'translateY(-2px)',
+      boxShadow: '0 6px 20px rgba(102, 126, 234, 0.6)',
+    },
+  },
+  userName: {
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: 'center',
+    color: '#ffffff',
+    fontWeight: 500,
+    fontSize: '1rem',
+  },
+  brandContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    cursor: 'pointer',
+    '&:hover': {
+      transform: 'scale(1.05)',
+    },
+  },
+  purple: {
+    color: theme.palette.getContrastText(deepPurple[500]),
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    border: '2px solid rgba(255, 255, 255, 0.3)',
+    width: '45px',
+    height: '45px',
+    fontSize: '1.2rem',
+    fontWeight: 700,
+    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+  },
+}));
